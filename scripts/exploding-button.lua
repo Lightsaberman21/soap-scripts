@@ -11,4 +11,19 @@ local button = Instance.new("TextButton")
 button.Name = "ExplodingButton"
 button.Size = UDim2.new(0, 120, 0, 40)
 button.Position = UDim2.new(0.5, 0, 0.5, 0)
-button.AnchorPoint 
+button.AnchorPoint = Vector2.new(0.5, 0.5)
+button.BackgroundColor3 = Color3.fromRGB(0, 122, 255)
+button.BorderSizePixel = 0
+
+button.text = "Detonate"
+button.TextColor = Color3.fromRGB(255, 0, 0)
+button.TextSize = 16
+button.Font = Enum.Font.SorceSansBold
+
+button.Parent = screenGui
+
+button.MouseButton1Click:Connect(function(player)
+	local character = player.Character
+	if not character then return end
+	
+end)
