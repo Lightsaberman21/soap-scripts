@@ -57,6 +57,6 @@ end
 
 Players.PlayerAdded:Connect(OnPlayerAdded)
 
-for _, player in Player:GetPlayers() do
+for _, player in Players:GetPlayers() do
 	onPlayerAdded(player)
 end
