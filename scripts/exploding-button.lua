@@ -1,5 +1,7 @@
 workspace.DetonateButton:Destroy()
 
+local character = 
+
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
