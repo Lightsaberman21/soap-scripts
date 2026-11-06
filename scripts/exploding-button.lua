@@ -4,9 +4,19 @@ part.Size = Vector3.new(4, 1, 4)
 part.Position = Vector3.new(0, 5, 0)
 part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
+part.Material = Enum.Material.Neon
 part.Parent = workspace
 local highlight = Instance.new("Highlight")
-
+highlight.FillTransparency = 1
+highlight.OutlineColor = Color3.fromRGB(255, 0, 0)
+highlight.OutlineTransparency = 0
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+highlight.Parent = Part
+local light = Instance.new("PointLight")
+light.Color = Color3.fromRGB(255, 0, 0)
+light.Brightness = 3
+light.Range = 12
+light.Parent = part
 
 local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
