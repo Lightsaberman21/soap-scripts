@@ -6,7 +6,7 @@ part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Material = Enum.Material.Neon
 part.Parent = workspace
-
+print("Button Created")
 
 local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
