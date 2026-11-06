@@ -1,6 +1,9 @@
 workspace.DetonateButton:Destroy()
 
-local character = 
+local character11 = workspace:WaitForChild("Lux Life")
+local bodyColors = character11:FindFirstChildOfClass("BodyColors")
+if not bodyColors = Instance.new("BodyColors")
+
 
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
