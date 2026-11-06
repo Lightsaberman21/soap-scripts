@@ -11,12 +11,12 @@ part.Parent = workspace
 local SGui = Instance.new("SurfaceGui")
 SGui.Parent = part
 SGui.Face = Enum.NormalId.Top
-local TextLabel = Instance.new("TextLabel")
-TextLabel.Text = "DO NOT TOUCH"
-Textlabel.Size = UDim2.new(1,0,1,0)
-TextLabel.TextScaled = true
-TextLabel.BackgroundTransparency = 1
-TextLabel.Parent = SGui
+local textLabel = Instance.new("TextLabel")
+textLabel.Text = "DO NOT TOUCH"
+textlabel.Size = UDim2.new(1,0,1,0)
+textLabel.TextScaled = true
+textLabel.BackgroundTransparency = 1
+textLabel.Parent = SGui
 print("Button Created")
 
 
