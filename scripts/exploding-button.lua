@@ -38,6 +38,8 @@ part.Touched:Connect(function(hit)
 	explosion.BlastPressure = 500000
 	explosion.ExplosionType = Enum.ExplosionType.NoCraters
 	explosion.Parent = workspace
-	wait(1)
+	wait(0.5)
+	explosion:Destroy()
+	wait(0.5)
 	textLabel.Text = "DO NOT TOUCH"
 end)
