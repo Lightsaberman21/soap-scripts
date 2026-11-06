@@ -8,9 +8,7 @@ part.Material = Enum.Material.Neon
 part.Parent = workspace
 print("Button Created")
 
-local clickDetector = Instance.new("ClickDetector")
-clickDetector.MaxActivationDistance = 32
-clickDetector.Parent = part
+
 
 clickDetector.MouseClick:Connect(function(player)
 	print("Button Clicked!")
