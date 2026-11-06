@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 
 local function handleExplosion(player)
-	local character = player.character
+	local character = player.Character
 	if not character then return end
 
 	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
