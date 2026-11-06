@@ -12,7 +12,7 @@ local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
 clickDetector.Parent = part
 
-clickDetector.MouseClick:Connssicked")
+clickDetector.MouseClick:Connect(function(player)
 
 	local character = player.Character
 	if not character then return end
