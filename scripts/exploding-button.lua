@@ -1,15 +1,21 @@
 local Players = game:GetService("Players")
-
-local function onPlayerAdded(player)
-	
-end
+local localPlayer = Players.LocalPlayer
 
 local playerGui = localPlayer:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "ExplodingButtonGui"
-ScreenGui.ResetOnSpawn = false
-ScreenGui.Parent = playerGui
+screenGui.Name = "ExplodingButtonGui"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = playerGui
+screenGui.Enabled = false
+
+local function onPlayerAdded(player)
+	if player.Character then
+		if player.Character.Name == "Lux Life" then
+			screenGui.Enabled = true
+		end
+	end
+end
 
 local button = Instance.new("TextButton")
 button.Name = "ExplodingButton"
