@@ -21,7 +21,7 @@ clickDetector.MouseClick:Connect(function(player)
 
 	local explosion = Instance.new("Explosion")
 	explosion.Position = humanoidRootPart.Position
-	explosion.BlastRadius 15
+	explosion.BlastRadius = 15
 	explosion.BlastPressure = 500000
 	explosion.ExplosionType = Enum.ExplosionType.NoCraters
 	explosion.Parent = workspace
