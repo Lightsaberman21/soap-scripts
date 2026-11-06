@@ -6,11 +6,7 @@ part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Material = Enum.Material.Neon
 part.Parent = workspace
-local light = Instance.new("PointLight")
-light.Color = Color3.fromRGB(255, 0, 0)
-light.Brightness = 3
-light.Range = 12
-light.Parent = part
+
 
 local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
