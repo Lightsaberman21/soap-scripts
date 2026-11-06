@@ -1,5 +1,5 @@
 local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
+local allPlayers = Players:GetPlayers()
 local playerGui = localPlayer:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui")
