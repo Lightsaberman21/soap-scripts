@@ -1,7 +1,7 @@
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(4, 1, 4)
-part.Position = Vector3.new(0, 1, 0)
+part.Position = Vector3.new(0, 5, 0)
 part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Parent = workspace
