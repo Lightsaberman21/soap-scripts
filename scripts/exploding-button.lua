@@ -13,7 +13,7 @@ clickDetector.MaxActivationDistance = 32
 clickDetector.Parent = part
 
 clickDetector.MouseClick:Connect(function(player)
-
+	print("Button Clicked!")
 	local character = player.Character
 	if not character then return end
 
