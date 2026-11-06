@@ -3,7 +3,7 @@ workspace.DetonateButton:Destroy()
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
-part.Position = Vector3.new(30, 5.1, 30)
+part.Position = Vector3.new(25, 5.1, 30)
 part.Anchored = true
 part.BrickColor = BrickColor.Red()
 part.Material = Enum.Material.Neon
