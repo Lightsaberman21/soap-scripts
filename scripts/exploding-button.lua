@@ -3,11 +3,16 @@ workspace.DetonateButton:Destroy()
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
-part.Position = Vector3.new(35, 5.1, 35)
+part.Position = Vector3.new(30, 5.1, 30)
 part.Anchored = true
 part.BrickColor = BrickColor.Red()
 part.Material = Enum.Material.Neon
 part.Parent = workspace
+local SGui = Instance.new("SurfaceGui")
+SGui.Parent = part
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Text = "DO NOT TOUCH"
+TextLabel.Parent = SGui
 print("Button Created")
 
 
