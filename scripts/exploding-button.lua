@@ -39,5 +39,24 @@ local function onPlayerAdded(player)
 	button.Parent = screenGui
 
 	button.MouseButton1Click:Connect(function()
-		
+		handleExplosion(player)
 	end)
+
+	player.CharacterAdded:Connect(function()
+		if character.Name == "Lux Life" then
+			screenGui.Enabled = true
+		else
+			screenGui.Enabled = false
+		end
+	end)
+
+	if player.Character and player.Character.Name == "Lux Life" then
+		screenGui.Enabled = true
+	end
+end
+
+Player.PlayerAdded:Connect(OnPlayerAdded)
+
+for _, player in Player:GetPlayers() do
+	onPlayerAdded(player)
+end
