@@ -5,7 +5,7 @@ part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
 part.Position = Vector3.new(35, 5.1, 35)
 part.Anchored = true
-part.BrickColor = BrickColor.new("Bright Red")
+part.BrickColor = BrickColor.fromRGB(255, 0, 0)
 part.Material = Enum.Material.Neon
 part.Parent = workspace
 print("Button Created")
