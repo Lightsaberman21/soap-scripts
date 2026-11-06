@@ -6,8 +6,8 @@ if not bodyColors then
 	bodyColors = Instance.new("BodyColors")
 	bodyColors.Parent = character
 end
-local shirtColor = Color3.new(0,0,0)
-local bodyColor = Color
+local shirtColor = Color3.new(0,0,196)
+local bodyColor = Color3.new
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
