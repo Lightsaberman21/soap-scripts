@@ -55,7 +55,7 @@ local function onPlayerAdded(player)
 	end
 end
 
-Player.PlayerAdded:Connect(OnPlayerAdded)
+Players.PlayerAdded:Connect(OnPlayerAdded)
 
 for _, player in Player:GetPlayers() do
 	onPlayerAdded(player)
