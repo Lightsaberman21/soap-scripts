@@ -5,6 +5,8 @@ part.Position = Vector3.new(0, 5, 0)
 part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Parent = workspace
+local highlight = Instance.new("Highlight")
+
 
 local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
