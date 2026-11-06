@@ -12,9 +12,9 @@ print("Button Created")
 
 
 
-part.Touched:Connect(function(plr)
+part.Touched:Connect(function(hit)
 	print("Button Clicked!")
-	local character = player.Character
+	local character = hit.Parent
 	if not character then return end
 
 	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
