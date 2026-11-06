@@ -4,8 +4,10 @@ local character11 = workspace:WaitForChild("Lux Life")
 local bodyColors = character11:FindFirstChildOfClass("BodyColors")
 if not bodyColors then
 	bodyColors = Instance.new("BodyColors")
-	bodyColors.Parent 
+	bodyColors.Parent = character
 end
+local shirtColor = Color3.new(0,0,0)
+local bodyColor = Color
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
