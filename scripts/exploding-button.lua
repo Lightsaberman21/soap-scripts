@@ -30,7 +30,7 @@ part.Touched:Connect(function(hit)
 	if not humanoidRootPart then return end
 
 	textLabel.Text = "I warned you..."
-	wait(1)
+	wait(4)
 
 	local explosion = Instance.new("Explosion")
 	explosion.Position = humanoidRootPart.Position
