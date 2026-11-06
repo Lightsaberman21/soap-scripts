@@ -1,6 +1,6 @@
 local Players = game:GetService("Players")
 local allPlayers = Players:GetPlayers()
-local localPlayer = allPlayer[1]
+local localPlayer = allPlayers[1]
 
 if localPlayer then
 	local playerGui = localPlayer:WaitForChild("PlayerGui")
