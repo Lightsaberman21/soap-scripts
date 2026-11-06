@@ -1,7 +1,7 @@
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
-part.Position = Vector3.new(22, 5.1, 22)
+part.Position = Vector3.new(35, 5.1, 35)
 part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Material = Enum.Material.Neon
