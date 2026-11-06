@@ -12,7 +12,10 @@ local pantColor = Color3.new(0,0,122)
 local headColor = Color3.new(255,255,255)
 bodyColors.HeadColor3 = headColor
 bodyColors.LeftArmColor3 = bodyColor
-bodyColors.
+bodyColors.RightArmColor3 = bodyColor
+bodyColors.LeftLegColor3 = pantColor
+bodyColors.RightLegColor3 = pantColor
+bodyColors.TorsoColor3 = shirtColor
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
