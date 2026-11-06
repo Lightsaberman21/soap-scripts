@@ -29,10 +29,15 @@ part.Touched:Connect(function(hit)
 	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
 	if not humanoidRootPart then return end
 
+	textLabel.Text = "I warned you..."
+	wait(1)
+
 	local explosion = Instance.new("Explosion")
 	explosion.Position = humanoidRootPart.Position
 	explosion.BlastRadius = 15
 	explosion.BlastPressure = 500000
 	explosion.ExplosionType = Enum.ExplosionType.NoCraters
 	explosion.Parent = workspace
+	wait(1)
+	textLabel.Text = "DO NOT TOUCH"
 end)
