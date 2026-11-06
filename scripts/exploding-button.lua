@@ -25,7 +25,8 @@ local function initializeSandboxPlayer(player)
 	print("Button Created")
 
 	button.MouseButton1Click:Connect(function()
-		local character = localPlayer.Character
+		print("Button Clicked")
+		local character = player.Character
 		if not character then return end
 
 		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
