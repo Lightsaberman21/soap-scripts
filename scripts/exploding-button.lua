@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 
 local function initializeSandboxPlayer(player)
-	local playerGui = localPlayer:WaitForChild("PlayerGui")
+	local playerGui = player:WaitForChild("PlayerGui")
 
 	local screenGui = Instance.new("ScreenGui")
 	screenGui.Name = "ExplodingButtonGui"
@@ -22,6 +22,7 @@ local function initializeSandboxPlayer(player)
 	button.TextSize = 16
 	button.Font = Enum.Font.SourceSansBold
 	button.Parent = screenGui
+	print("Button Created")
 
 	button.MouseButton1Click:Connect(function()
 		local character = localPlayer.Character
