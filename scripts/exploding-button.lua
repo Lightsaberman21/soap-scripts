@@ -1,8 +1,6 @@
 local Players = game:GetService("Players")
-local allPlayers = Players:GetPlayers()
-local localPlayer = allPlayers[1]
 
-if localPlayer then
+local function initializeSandboxPlayer(player)
 	local playerGui = localPlayer:WaitForChild("PlayerGui")
 
 	local screenGui = Instance.new("ScreenGui")
@@ -39,6 +37,10 @@ if localPlayer then
 		explosion.ExplosionType = Enum.ExplosionType.NoCraters
 		explosion.Parent = workspace
 	end)
-else
-	warn("No player found in the current sandbox instance.")
+end
+
+Players.PlayerAdded:Connect(initializeSandboxPlayer)
+
+for _, players in ipairs(Players:GetPlayers()) do
+	initializeSandboxPlayer(player)
 end
