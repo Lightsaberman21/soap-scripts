@@ -22,7 +22,7 @@ local function onPlayerAdded(player)
 	local screenGui = Instance.new("ScreenGui")
 	screenGui.Name = "ExplodingButtonGui"
 	screenGui.ResetOnSpawn = false
-	screenGui.Enabled = false
+	screenGui.Enabled = true
 	screenGui.Parent = playerGui
 
 	local button = Instance.new("TextButton")
@@ -40,14 +40,6 @@ local function onPlayerAdded(player)
 
 	button.MouseButton1Click:Connect(function()
 		handleExplosion(player)
-	end)
-
-	player.CharacterAdded:Connect(function()
-		if character.Name == "Lux Life" then
-			screenGui.Enabled = true
-		else
-			screenGui.Enabled = false
-		end
 	end)
 
 	if player.Character and player.Character.Name == "Lux Life" then
