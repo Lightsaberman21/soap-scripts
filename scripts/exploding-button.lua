@@ -10,6 +10,7 @@ part.Material = Enum.Material.Neon
 part.Parent = workspace
 local SGui = Instance.new("SurfaceGui")
 SGui.Parent = part
+SGui.Face = Enum.NormalId.Top
 local TextLabel = Instance.new("TextLabel")
 TextLabel.Text = "DO NOT TOUCH"
 Textlabel.Size = UDim2.new(1,0,1,0)
