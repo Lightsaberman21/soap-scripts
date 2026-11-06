@@ -12,7 +12,7 @@ print("Button Created")
 
 
 
-part.Touched:Connect(function(player)
+part.Touched:Connect(function(plr)
 	print("Button Clicked!")
 	local character = player.Character
 	if not character then return end
