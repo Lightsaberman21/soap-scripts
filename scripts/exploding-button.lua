@@ -1,5 +1,9 @@
 local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
+
+local function onPlayerAdded(player)
+	
+end
+
 local playerGui = localPlayer:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui")
@@ -25,5 +29,14 @@ button.Parent = screenGui
 button.MouseButton1Click:Connect(function(player)
 	local character = player.Character
 	if not character then return end
-	
+
+	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	if not humanoidRootPart then return end
+
+	local explosion = Instance.new("Explosion")
+
+	explosion.Position = humanoidRootPart.Position
+	explosion.BlastRadius = 15
+	explosion.BlastPressure = 500000
+	explosion.Parent = workspace
 end)
