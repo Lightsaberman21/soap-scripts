@@ -1,7 +1,7 @@
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
-part.Position = Vector3.new(5, 0, 5)
+part.Position = Vector3.new(22, 5.1, 22)
 part.Anchored = true
 part.BrickColor = BrickColor.new("Bright Red")
 part.Material = Enum.Material.Neon
@@ -12,8 +12,7 @@ local clickDetector = Instance.new("ClickDetector")
 clickDetector.MaxActivationDistance = 32
 clickDetector.Parent = part
 
-clickDetector.MouseClick:Connect(function(player)
-	print("Button Clicked")
+clickDetector.MouseClick:Connssicked")
 
 	local character = player.Character
 	if not character then return end
