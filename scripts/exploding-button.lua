@@ -1,3 +1,5 @@
+workspace.DetonateButton:Destroy()
+
 local part = Instance.new("Part")
 part.Name = "DetonateButton"
 part.Size = Vector3.new(7, 1, 4)
@@ -10,7 +12,7 @@ print("Button Created")
 
 
 
-clickDetector.MouseClick:Connect(function(player)
+part.Touched:Connect(function(player)
 	print("Button Clicked!")
 	local character = player.Character
 	if not character then return end
