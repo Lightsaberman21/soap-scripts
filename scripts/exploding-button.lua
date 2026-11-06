@@ -1,4 +1,4 @@
-workspace.DetonateButton:Destroy()
+
 
 local character11 = workspace:WaitForChild("Lux Life")
 local bodyColors = character11:FindFirstChildOfClass("BodyColors")
