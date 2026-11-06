@@ -15,5 +15,14 @@ clickDetector.MouseClick:Connect(function(player)
 
 	local character = player.Character
 	if not character then return end
-	
+
+	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	if not humanoidRootPart then return end
+
+	local explosion = Instance.new("Explosion")
+	explosion.Position = humanoidRootPart.Position
+	explosion.BlastRadius 15
+	explosion.BlastPressure = 500000
+	explosion.ExplosionType = Enum.ExplosionType.NoCraters
+	explosion.Parent = workspace
 end)
